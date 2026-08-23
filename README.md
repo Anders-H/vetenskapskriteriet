@@ -1,0 +1,2 @@
+# vetenskapskriteriet
+Manifest för vetenskaplighet
