@@ -168,6 +168,20 @@ h1 { margin: 0; max-width: 970px; font-family: Georgia, 'Times New Roman', serif
 .directory-contact a span { color: #ffbe2e; transition: transform .2s ease; }
 .directory-contact a:hover span { transform: translate(4px, -4px); }
 
+.about-content { padding: 80px clamp(24px, 7vw, 128px) 140px; }
+.about-list { max-width: 1180px; margin: 0 0 0 auto; border-bottom: 1px solid var(--line); }
+.about-section {
+  display: grid;
+  grid-template-columns: 70px minmax(260px, .8fr) minmax(340px, 1.2fr);
+  gap: clamp(24px, 4vw, 70px);
+  padding: 54px 0 60px;
+  align-items: start;
+}
+.about-section + .about-section { border-top: 1px solid var(--line); }
+.about-number { padding-top: 8px; color: var(--signal); font-size: 10px; font-weight: 700; letter-spacing: .15em; }
+.about-section h2 { margin: 0; font: 400 clamp(36px, 4.5vw, 72px)/.96 Georgia, serif; letter-spacing: -.045em; }
+.about-section p { max-width: 570px; margin: 5px 0 0; color: rgba(17,26,44,.75); font-size: clamp(16px, 1.3vw, 20px); line-height: 1.55; }
+
 .contact { padding: 120px clamp(24px, 7vw, 128px) 90px; background: var(--blue); color: white; }
 .contact .section-kicker { color: rgba(255,255,255,.65); }
 .contact h2 { max-width: 1250px; margin: 0; font: 400 clamp(56px, 8.4vw, 142px)/.88 Georgia, serif; letter-spacing: -.06em; }
@@ -223,6 +237,10 @@ h1 { margin: 0; max-width: 970px; font-family: Georgia, 'Times New Roman', serif
   .directory-heading { display: grid; }
   .directory-contact { grid-template-columns: 1fr; }
   .directory-contact a { justify-self: start; }
+  .about-content { padding-top: 60px; padding-bottom: 95px; }
+  .about-list { margin-left: 0; }
+  .about-section { grid-template-columns: 42px 1fr; gap: 18px; }
+  .about-section p { grid-column: 2; }
   .site-footer { grid-template-columns: 1fr auto; }
   .site-footer p:nth-child(2) { display: none; }
 }
@@ -246,6 +264,10 @@ h1 { margin: 0; max-width: 970px; font-family: Georgia, 'Times New Roman', serif
   .member-grid { grid-template-columns: 1fr; gap: 55px; }
   .member-card h2, .member-card h3 { font-size: 32px; }
   .council-hero, .directory-contact { padding-left: 20px; padding-right: 20px; }
+  .about-content { padding-left: 20px; padding-right: 20px; }
+  .about-section { grid-template-columns: 32px 1fr; padding: 38px 0 44px; gap: 12px; }
+  .about-section h2 { font-size: 38px; }
+  .about-section p { font-size: 15px; }
   .contact h2 { font-size: 55px; }
   .contact-bottom { margin-top: 60px; }
   .contact-bottom a { gap: 20px; font-size: 27px; }
