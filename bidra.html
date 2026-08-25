@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bidra | Vetenskapskriteriet</title>
+  <meta name="description" content="Vill du bidra till Vetenskapskriteriet? Berätta vem du är och hur du vill medverka.">
+  <meta name="theme-color" content="#f2efe7">
+
+  <meta property="og:title" content="Bidra | Vetenskapskriteriet">
+  <meta property="og:description" content="Berätta vem du är och hur du vill bidra till Vetenskapskriteriet.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bidra | Vetenskapskriteriet">
+  <meta name="twitter:description" content="Berätta vem du är och hur du vill bidra till Vetenskapskriteriet.">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Vetenskapskriteriet, startsida">
+        <span class="brand-mark" aria-hidden="true">SV</span>
+        <span class="brand-name">Vetenskapskriteriet</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Huvudnavigation">
+        <a href="index.html#manifest">Manifest</a>
+        <a href="signatarer.html">Signatärer</a>
+        <a href="vi.html">Vi</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <section class="council-hero">
+      <p class="section-kicker"><span>05</span> Bidra</p>
+      <h1>Vill du<br>bidra?</h1>
+      <div class="council-hero-copy">
+        <p>Vetenskapskriteriet växer genom människor som är beredda att låta principerna gälla också när det är svårt.</p>
+        <a class="back-link" href="index.html">Till startsidan <span aria-hidden="true">↙</span></a>
+      </div>
+    </section>
+
+    <section class="contribute-content" aria-labelledby="contribute-title">
+      <div class="contribute-layout">
+        <div class="contribute-intro">
+          <h2 id="contribute-title">Berätta om dig.</h2>
+          <p>Beskriv kort vem du är, vilken erfarenhet du har och hur du vill bidra. Vi läser alla meddelanden och återkommer om vi ser en möjlig väg framåt.</p>
+          <p class="contribute-note">Alla fält är obligatoriska</p>
+        </div>
+
+        <form class="contribute-form" action="mailto:anders@vetenskapskriteriet.se?subject=Jag%20vill%20bidra%20till%20Vetenskapskriteriet" method="post" enctype="text/plain" accept-charset="UTF-8">
+          <div class="form-field">
+            <label for="name">Namn <span aria-hidden="true">*</span></label>
+            <input id="name" name="Namn" type="text" autocomplete="name" placeholder="För- och efternamn" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">E-post <span aria-hidden="true">*</span></label>
+            <input id="email" name="E-post" type="email" autocomplete="email" inputmode="email" placeholder="namn@exempel.se" required>
+          </div>
+
+          <div class="form-field">
+            <label for="role">One-line CV <span aria-hidden="true">*</span></label>
+            <input id="role" name="Yrkesroll eller kompetensområde" type="text" autocomplete="organization-title" placeholder="Roll eller kompetensområde" required>
+          </div>
+
+          <div class="form-field membership-field" role="radiogroup" aria-labelledby="membership-label" aria-required="true">
+            <span class="form-field-label" id="membership-label">Medlemskap <span aria-hidden="true">*</span></span>
+            <div class="membership-options">
+              <label class="radio-option" for="membership-annual">
+                <input id="membership-annual" name="Medlemskap" type="radio" value="Ett års medlemskap för SEK 100" required>
+                <span>Ett års medlemskap för SEK 100</span>
+              </label>
+              <label class="radio-option" for="membership-lifetime">
+                <input id="membership-lifetime" name="Medlemskap" type="radio" value="Livslångt medlemskap för SEK 500" required>
+                <span>Livslångt medlemskap för SEK 500</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Meddelande <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="Meddelande" placeholder="Övriga kommentarer" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="submit-button" type="submit">Skicka <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><span class="brand-mark inverted" aria-hidden="true">SV</span><span>Vetenskapskriteriet</span></div>
+      <p>Vetenskap. Öppenhet. Ansvar. <a href="bidra.html">Vill du bidra?</a></p>
+      <p>© 2026 · Sverige</p>
+    </footer>
+  </main>
+</body>
+</html>
