@@ -48,7 +48,7 @@
       <div class="contribute-layout">
         <div class="contribute-intro">
           <h2 id="contribute-title">Berätta om dig.</h2>
-          <p>Beskriv kort vem du är, vilken erfarenhet du har och hur du vill bidra. Vi läser alla meddelanden och återkommer om vi ser en möjlig väg framåt.</p>
+          <p>Beskriv kort vem du är, vilken erfarenhet du har och hur du vill bidra. Vi läser alla meddelanden och återkommer om vi ser en möjlig väg framåt. Vill du inte använda formuläret, går det bra att skriva till <a href="mailto:anders@vetenskapskriteriet.se">anders@vetenskapskriteriet.se</a>.</p>
           <p class="contribute-note">Alla fält är obligatoriska</p>
         </div>
 
@@ -100,5 +100,30 @@
       <p>© 2026 · Sverige</p>
     </footer>
   </main>
+
+  <script>
+    const contributeForm = document.querySelector('.contribute-form');
+
+    function buildContributionMailtoUrl(form) {
+      const fields = form.elements;
+      const subject = 'Jag vill bidra till Vetenskapskriteriet';
+      const body = [
+        `Namn: ${fields.namedItem('Namn').value}`,
+        `E-post: ${fields.namedItem('E-post').value}`,
+        `One-line CV: ${fields.namedItem('Yrkesroll eller kompetensområde').value}`,
+        `Medlemskap: ${fields.namedItem('Medlemskap').value}`,
+        '',
+        'Meddelande:',
+        fields.namedItem('Meddelande').value
+      ].join('\r\n');
+
+      return `mailto:anders@vetenskapskriteriet.se?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+
+    contributeForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      window.location.href = buildContributionMailtoUrl(contributeForm);
+    });
+  </script>
 </body>
 </html>
