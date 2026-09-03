@@ -356,3 +356,12 @@ h1 { margin: 0; max-width: 970px; font-family: Georgia, 'Times New Roman', serif
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+.brand--wordmark { flex: 0 0 auto; }
+.brand--wordmark svg { display: block; width: 156px; height: auto; }
+.brand-wordmark-colon { fill: var(--blue); }
+
+@media (max-width: 560px) {
+  .site-header { flex-wrap: wrap; gap: 12px; }
+  .brand--wordmark svg { width: 140px; }
+}
