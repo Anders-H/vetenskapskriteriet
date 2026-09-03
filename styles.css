@@ -358,8 +358,10 @@ h1 { margin: 0; max-width: 970px; font-family: Georgia, 'Times New Roman', serif
 }
 
 .brand--wordmark { flex: 0 0 auto; }
-.brand--wordmark svg { display: block; width: 156px; height: auto; }
+.brand--wordmark svg { display: block; width: 156px; height: auto; letter-spacing: normal; }
 .brand-wordmark-colon { fill: var(--blue); }
+.footer-brand.brand--wordmark svg { width: 100px; }
+.footer-brand .brand-wordmark-colon { fill: #809dff; }
 
 @media (max-width: 560px) {
   .site-header { flex-wrap: wrap; gap: 12px; }
