@@ -66,6 +66,15 @@ h1 { margin: 0; max-width: 970px; font-family: Georgia, 'Times New Roman', serif
 .hero-index-line { height: 1px; background: var(--ink); }
 .hero-index span:last-child { grid-column: 2; color: var(--signal); }
 
+.home-quote {
+  margin: 0;
+  padding: clamp(40px, 6vw, 80px) clamp(24px, 4vw, 68px);
+  text-align: center;
+  font: italic 400 clamp(24px, 2.8vw, 40px)/1.4 Georgia, 'Times New Roman', serif;
+  letter-spacing: -.02em;
+}
+.home-quote p { max-width: 900px; margin: 0 auto; text-wrap: balance; }
+
 .fact-band {
   padding: 52px clamp(24px, 4vw, 68px);
   display: grid;
@@ -157,7 +166,8 @@ h1 { margin: 0; max-width: 970px; font-family: Georgia, 'Times New Roman', serif
 .back-link span { color: var(--signal); font-size: 16px; }
 .council-hero.compact-hero { padding-top: 28px; }
 .council-hero.compact-hero > h1 { align-self: start; margin-top: 38px; }
-.council-hero.home-hero .hero-copy { padding-top: 0; }
+.council-hero.home-hero { padding-bottom: clamp(40px, 6vw, 80px); }
+.council-hero.home-hero .hero-copy { align-self: end; padding: 0; }
 .council-directory { padding-top: 80px; border-top: 0; }
 .directory-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; margin-bottom: 55px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
 .directory-heading > p { margin: 0; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .15em; }
